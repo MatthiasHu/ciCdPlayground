@@ -21,3 +21,12 @@ jobs:
       # Install dependencies
       - name: Install dependencies
         run: yarn install
+
+      - run: yarn install
+      - run: yarn build
+      - run: yarn test
+      - run: yarn test:e2e
+      - name: upload test results
+        uses: actions/upload-artifact@v4
+        with:
+          test_results: '**jest-junit.xml'
