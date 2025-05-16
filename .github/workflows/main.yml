@@ -26,7 +26,7 @@ jobs:
       - run: yarn build
       - run: yarn test
       - run: yarn test:e2e
-      - name: upload test results
+      - name: Upload test results
         uses: actions/upload-artifact@v4
         with:
-          test_results: '**jest-junit.xml'
+          path: '**jest-junit.xml'
