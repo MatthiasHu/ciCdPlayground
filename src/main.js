@@ -9,7 +9,7 @@ new App({
     // or an array of bullet points
 
     // What do you associate with the term 'CI/CD'?
-    associations: ["great stuff"],
+    associations: ["great stuff", "compiling LaTeX documents", "type/proof checking formalized math", "surprising non-explicit state / impurity"],
     // Which CI/CD tools do you use in your project?
     tools: ["Jenkins"],
     // What do you want to learn in this workshop?
